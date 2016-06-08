@@ -135,8 +135,7 @@ class Mic:
                 print "signal lasting too long - stopping the stream"
                 break
 
-            if self._signal_started:
-                counter += 1
+            counter += 1
 
         # TODO: add jasper low beep
 
