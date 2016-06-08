@@ -108,6 +108,8 @@ class Mic:
                 data.append(struct.pack('<i', d))
             level_data.append(self._get_sound_level(chunk))
 
+            print counter, counter_limit
+
             # signal not started
             if not self._signal_started:
                 # signal not started, but there is signal
